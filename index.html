@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM - Completo</title>
+
+    <style>
+        .regrito{
+            font-weight:bold;
+        }
+        .vermelho{
+            color: red;
+        }
+        .roxo{
+            color: purple;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Mexendo com Dom</h1>
+    <h1 id="titulo">Mexendo com Dom</h1>
     
     <ul id="listinha">
     <li id="Item 01">item 01</li>
@@ -14,13 +27,29 @@
     <li id="Item 03">item 03</li>
 </ul>
 
-<ol class = "listaOrdenada">
+<ol class = "ordenada">
 
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3</li>
     <li>Item 4</li>
 </ol>
+
+
+<ul class = "ordenada">
+
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<div id="elem">Elemento piscante</div>
+<script>
+  setInterval(() => elem.hidden = !elem.hidden, 1000);
+</script>
+
+<img src="LogoAB-final.png" style ="height: 150px; object-fit: scale-down;">
 
     <script src="script.js"></script>
 </body>
